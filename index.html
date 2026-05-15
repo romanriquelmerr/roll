@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Please wait...</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Georgia', serif;
+    padding: 24px 16px;
+  }
+  .logo {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #555;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-bottom: 28px;
+  }
+  .card {
+    background: #111111;
+    border: 0.5px solid #2a2a2a;
+    border-radius: 18px;
+    padding: 32px 24px 28px;
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    border: 0.5px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 22px;
+    font-size: 26px;
+  }
+  .title {
+    font-size: 19px;
+    font-weight: 400;
+    color: #f0f0f0;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  .subtitle {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-bottom: 24px;
+  }
+  .ad-slot {
+    background: #161616;
+    border: 0.5px dashed #2a2a2a;
+    border-radius: 12px;
+    padding: 16px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .btn-enter {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #c8a96e, #e8c98e);
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0a0a0a;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: 0.5px;
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity 0.2s, transform 0.1s;
+    box-shadow: 0 4px 20px rgba(200, 169, 110, 0.35);
+  }
+  .btn-enter:active {
+    opacity: 0.85;
+    transform: scale(0.98);
+  }
+  .footer {
+    font-size: 11px;
+    color: #444;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<p class="logo">secure redirect</p>
+
+<div class="card">
+
+  <div class="icon">🔒</div>
+
+  <p class="title">Your connection is verified</p>
+  <p class="subtitle">Tap the button below<br>to continue to your destination.</p>
+
+  <!-- PEGÁ AQUÍ EL CÓDIGO DE ADSTERRA 300x250 -->
+  <div class="ad-slot" id="adContainer">
+    <!-- CÓDIGO ADSTERRA ACÁ -->
+  </div>
+
+  <button class="btn-enter" onclick="enterNow()">⚡ Enter now</button>
+
+</div>
+
+<p class="footer">Secure connection established</p>
+
+<script>
+  // ======================================
+  // CONFIGURACIÓN — solo editá esta línea
+  // ======================================
+  var SMARTLINK_URL = "https://telegrouplink.com/";
+  // ======================================
+
+  function enterNow() {
+    window.location.href = SMARTLINK_URL;
+  }
+</script>
+
+</body>
+</html>
